@@ -2,10 +2,9 @@
 
 import aws_cdk as cdk
 
-from pluralsight_aws_infrastructure_cdk.pluralsight_aws_infrastructure_cdk_stack import PluralsightAwsInfrastructureCdkStack
-
+from pluralsight_aws_infrastructure_cdk.lambda_stack import LambdaStack
 
 app = cdk.App()
-PluralsightAwsInfrastructureCdkStack(app, "pluralsight-aws-infrastructure-cdk")
+LambdaStack(app, "LambdaStack")
 
 app.synth()
